@@ -58,6 +58,7 @@ body {
     height: 550px;
     background-size: cover;
     width: 100%;
+    opacity: 0.8;
 }
 .first h1{
     color: white;
@@ -266,7 +267,7 @@ h1{
   }
   
 /* media queries */
-@media screen and (max-width: 800px )and ( min-width:370px){
+@media screen and (max-width: 800px )and ( min-width:300px){
   .first{
     width: 100%;
   }
