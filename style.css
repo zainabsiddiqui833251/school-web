@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: black;
+    color: white;
+}
+
+/*  first div  */
+.first {
+    background-image: url(./img/Hibbing_High_School_2014.jpg);
+    height: 550px;
+    background-size: cover;
+    width: 100%;
+}
+.first h1{
+    color: white;
+   text-align: center;
+   margin-bottom: 10%;
+   font-size: 50px;
+}
+
+/*  first div end */
+
+/* left */
+.left {
+    display: inline-block;
+
+
+}
+
+/* left */
+.achieve {
+    border: solid 1px black;
+    /* height: 550px; */
+    border-top: 5%;
+    padding: 5%;
+
+}
+
+.achieve li {
+    list-style-type: none;
+    font-size: larger;
+}
+
+.admission {
+    border: solid 1px black;
+    /* height: 1570px; */
+    padding: 5%;
+    font-size: larger;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.rules {
+    border: solid 1px black;
+    /* height: 580px; */
+    padding: 5%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+}
+.rules h3{
+    font-size: larger;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 3px 3px grey;
+}
+
+h3 {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head {
+    border: solid;
+    width: 50%;
+    margin: 0px auto;
+    overflow-y: hidden;
+    height: 250px;
+    display: inline;
+}
+
+.facility .facility1 .img {
+    width: 100%;
+    height: 150px;
+    /* display: inline-block; */
+    position: relative;
+    top: -60px;
+    left: 20px;
+}
+
+.facility img {
+    width: 100%;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.facility h3 {
+    font-size: large;
+}
+
+.facility1 {
+    /* display: inline-block;
+    width: 45%;
+    padding: 5%;
+    margin: 2%;
+    border: solid;
+    height: 350px;
+    overflow: hidden;
+    background-color: white; */
+    display: inline-block;
+    position: relative;
+    max-width: 45%;
+    /* height: 300px; */
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    border: solid;
+}
+
+.facility1:hover {
+    height: 330px;
+}
+
+.facility1:hover {
+    background-color: red;
+    color: white;
+}
+
+.facility {
+    /* margin-top: 3%;
+    border-bottom: 3px solid; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* activity */
+.activities1 {
+    display: inline-block;
+    width: 45%;
+    padding: 5%;
+    margin: 2%;
+    border: solid;
+    height: 350px;
+    overflow: hidden;
+}
+
+.activities1:hover {
+    background-color: red;
+    color: white;
+}
+
+.activities1 img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.activities {
+    padding: 4%;
+    border-bottom: 3px solid black;
+}
+
+/* about */
+.about {
+    color: black;
+    padding: 3%;
+    border: 3px solid black;
+    margin-top: 10%;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.footer .top {
+    text-align: left;
+    padding: 50px;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+  }
+  .footer h3 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 2em;
+  }
+  
+  .footer li {
+    display: inline;
+  }
+  
+  .footer li a {
+    font-size: 50px;
+    padding: 15px;
+    color: antiquewhite;
+  }
+  
+  .footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    height: 380px;
+    color: white;
+  }
+  
+/* media queries */
+@media screen and (max-width: 800px )and ( min-width:420px){
+  .first{
+    width: 100%;
+  }
+  .about{
+    height: 300px;
+    overflow: auto;
+  }
+.facility1{
+   height: 200px;
+   overflow: auto;
+   padding: 10px;
+   overflow-x: hidden;
+   width: 40%;
+   display: contents;
+}
+.facility1 h3{
+    font-size: medium;
+    line-height: 2em;
+    padding: 5%;
+}
+.facility img{
+    width: 100%;
+    display: none;
+}
+.facility1 .img{
+ display: none;
+    height: 0;
+}
+.achieve h4{
+    font-size: medium;
+}
+.activities1 h2 {
+    font-size: large;
+}
+.activities1{
+    height: 300px;
+    width: 90%;
+    
+}
+.achieve{
+    padding: 5%;
+    
+}
+.admission li{
+    font-size: medium;
+}
+.left{
+    display: initial;
+}
+.footer .links  li a{
+    font-size: larger;
+}
+.footer{
+text-align: center;
+font-size: larger;
+}
+.first{
+    background-size: cover;
+    background-position: center;
+}
+}
